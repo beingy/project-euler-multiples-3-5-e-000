@@ -15,8 +15,12 @@ class Multiples
   def sum_multiples
     collect_multiples.reduce(:+)
   end
+
+  def sum
+    puts collect_multiples.reduce(:+)
+  end
 end
 
 #limit = Multiples.new(10)
-#puts limit.collect_multiples
+Multiples.new(10).sum
 #puts limit.sum_multiples
